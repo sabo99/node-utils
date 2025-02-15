@@ -35,7 +35,7 @@ const throwIfMissing = createThrowable(Conditionals.isPresent, "Something");
  * Throws an error if the value is not a string.
  * @type {Function}
  */
-const throwIfNotString = createThrowable(Conditionals.isPresent, "String");
+const throwIfNotString = createThrowable(Conditionals.isString, "String");
 
 /**
  * Throws an error if the value is not an object.
@@ -47,12 +47,12 @@ const throwIfNotObject = createThrowable(Conditionals.isObject, "Object");
  * Throws an error if the value is not an array.
  * @type {Function}
  */
-const throwIfNotArray = createThrowable(Conditionals.isObject, "Array");
+const throwIfNotArray = createThrowable(Conditionals.isArray, "Array");
 
 module.exports = {
 	createThrowable,
 	throwIfMissing,
 	throwIfNotString,
 	throwIfNotObject,
-	throwIfNotArray,
+	throwIfNotArray
 };
