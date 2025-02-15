@@ -1,6 +1,6 @@
 {
   "name": "@sabo99/node-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "utilities for node modules",
   "main": "src/index.js",
   "scripts": {
