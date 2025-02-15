@@ -13,42 +13,42 @@ npm i @sabo99/node-utils
 ### Conditionals
 
 ```javascript
-const Conditionals = require('node-utils/src/Conditionals');
+const Utils = require('@sabo99/node-utils');
 
 // Check if a value is null
-console.log(Conditionals.isNull(null)); // true
+console.log(Utils.isNull(null)); // true
 
 // Check if a value is a non-empty string
-console.log(Conditionals.isNonEmptyString('Hello')); // true
+console.log(Utils.isNonEmptyString('Hello')); // true
 ```
 
 ### Helpers
 
 ```javascript
-const Helpers = require('node-utils/src/Helpers');
+const Utils = require('@sabo99/node-utils');
 
 // Generate a random number of length 5
-console.log(Helpers.generateRandomNumber(5)); // e.g., '12345'
+console.log(Utils.generateRandomNumber(5)); // e.g., '12345'
 
 // Generate a random string of length 8
-console.log(Helpers.generateRandomString(8)); // e.g., 'aBcDeFgH'
+console.log(Utils.generateRandomString(8)); // e.g., 'aBcDeFgH'
 ```
 
 ### Throwable
 
 ```javascript
-const Throwable = require('node-utils/src/Throwable');
+const Utils = require('@sabo99/node-utils');
 
 // Throws an error if the value is missing (null or undefined)
-Throwable.throwIfMissing(null, 'Value is missing'); // Throws an error
+Utils.throwIfMissing(null, 'Value is missing'); // Throws an error
 
 // Throws an error if the value is not a string
-Throwable.throwIfNotString(123, 'Value is not a string'); // Throws an error
+Utils.throwIfNotString(123, 'Value is not a string'); // Throws an error
 ```
 
 ## API
 
-### Conditionals
+### Utils
 
 - `isNull(value)`: Checks if a value is null.
 - `isUndifined(value)`: Checks if a value is undefined.
@@ -66,13 +66,9 @@ Throwable.throwIfNotString(123, 'Value is not a string'); // Throws an error
 - `isObject(value)`: Checks if a value is an object.
 - `isEmptyObject(value)`: Checks if an object is empty (has no properties or symbols).
 
-### Helpers
-
 - `noop()`: A no-operation function that does nothing.
 - `generateRandomNumber(length)`: Generates a random number of a specified length.
 - `generateRandomString(length)`: Generates a random string of a specified length.
-
-### Throwable
 
 - `createThrowable(condition, type)`: Creates a throwable function based on a condition and type.
 - `throwIfMissing(value, errorMessage, Err)`: Throws an error if the value is missing (null or undefined).
