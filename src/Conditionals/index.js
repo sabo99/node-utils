@@ -122,5 +122,5 @@ module.exports = {
 	isEmptyArray,
 	isNonEmptyArray,
 	isObject,
-	isEmptyObject,
+	isEmptyObject
 };

@@ -6,4 +6,4 @@ module.exports = {
   ...Conditionals,
   ...Helpers,
   ...Throwable
-}
+};

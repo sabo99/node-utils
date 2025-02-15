@@ -31,9 +31,5 @@ const generateRandomString = (length) => {
 module.exports = {
   noop,
   generateRandomNumber,
-  generateRandomString,
-};
-
-module.exports = {
-	noop,
+  generateRandomString
 };
