@@ -5,7 +5,7 @@ Utilities for node modules
 ## Installation
 
 ```sh
-npm install node-utils
+npm i @sabo99/node-utils
 ```
 
 ## Usage
