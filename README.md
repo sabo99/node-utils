@@ -51,7 +51,7 @@ Utils.throwIfNotString(123, 'Value is not a string'); // Throws an error
 ### Utils
 
 - `isNull(value)`: Checks if a value is null.
-- `isUndifined(value)`: Checks if a value is undefined.
+- `isUndefined(value)`: Checks if a value is undefined.
 - `isMissing(value)`: Checks if a value is either null or undefined.
 - `isPresent(value)`: Checks if a value is present (not null or undefined).
 - `isString(value)`: Checks if a value is a string.

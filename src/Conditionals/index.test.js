@@ -1,6 +1,6 @@
 const {
 	isNull,
-	isUndifined,
+	isUndefined,
 	isMissing,
 	isPresent,
 	isString,
@@ -25,9 +25,9 @@ describe("Conditionals", () => {
 		});
 	});
 
-	describe("#isUndifined", () => {
+	describe("#isUndefined", () => {
 		it("should return true if the value is undefined", () => {
-			const result = isUndifined(undefined);
+			const result = isUndefined(undefined);
 			expect(result).toBeTruthy();
 		});
 	});
