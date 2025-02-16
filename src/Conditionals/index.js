@@ -10,14 +10,14 @@ const isNull = (value) => value === null;
  * @param {*} value - The value to check.
  * @returns {boolean} True if the value is undefined, otherwise false.
  */
-const isUndifined = (value) => value === undefined;
+const isUndefined = (value) => value === undefined;
 
 /**
  * Checks if a value is either null or undefined.
  * @param {*} value - The value to check.
  * @returns {boolean} True if the value is null or undefined, otherwise false.
  */
-const isMissing = (value) => isNull(value) || isUndifined(value);
+const isMissing = (value) => isNull(value) || isUndefined(value);
 
 /**
  * Checks if a value is present (not null or undefined).
@@ -109,7 +109,7 @@ const isEmptyObject = (value) =>
 
 module.exports = {
 	isNull,
-	isUndifined,
+	isUndefined,
 	isMissing,
 	isPresent,
 	isString,
