@@ -28,7 +28,7 @@ describe("Throwable", () => {
     it("should throw an error with default message when error message is provide as empty string", () => {
 			expect(() => throwIfMissing(null, "")).toThrow(
 				new TypeError(
-					'Validation failed - expected "Something", but received "null" of type "object"'
+					'Validation Error: Expected a value of type "Something", but received "null" of type "object".'
 				)
 			);
 		});
