@@ -15,12 +15,12 @@ const createThrowable =
 		}
 
 		if (condition(value)) {
-			return;
+			return undefined;
 		}
 
-		const message = Conditionals.isNonEmptyString(errorMessage)
-			? errorMessage
-			: `Validation failed - expected "${type}", but received "${value}" of type "${typeof value}"`;
+    const message = Conditionals.isNonEmptyString(errorMessage)
+      ? errorMessage
+      : `Validation Error: Expected a value of type "${type}", but received "${value}" of type "${typeof value}".`;
 
 		throw new Err(message);
 	};
