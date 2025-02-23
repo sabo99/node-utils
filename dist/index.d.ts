@@ -1,0 +1,26 @@
+declare const _exports: {
+    createThrowable: (condition: Function, type: string) => Function;
+    throwIfMissing: Function;
+    throwIfNotString: Function;
+    throwIfNotObject: Function;
+    throwIfNotArray: Function;
+    noop: () => void;
+    generateRandomNumber: (length: number) => string;
+    generateRandomString: (length: number) => string;
+    isNull: (value: any) => boolean;
+    isUndefined: (value: any) => boolean;
+    isMissing: (value: any) => boolean;
+    isPresent: (value: any) => boolean;
+    isString: (value: any) => boolean;
+    isBoolean: (value: any) => boolean;
+    isFunction: (value: any) => boolean;
+    isArray: (value: any) => boolean;
+    isEqual: (value1: any, value2: any) => boolean;
+    isEmptyString: (value: any) => boolean;
+    isNonEmptyString: (value: any) => boolean;
+    isEmptyArray: (value: any) => boolean;
+    isNonEmptyArray: (value: any) => boolean;
+    isObject: (value: any) => boolean;
+    isEmptyObject: (value: any) => boolean;
+};
+export = _exports;
