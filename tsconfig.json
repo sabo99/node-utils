@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,               // Allow JavaScript files
+    "declaration": true,           // Generate .d.ts files
+    "emitDeclarationOnly": false,   // Only generate .d.ts, no .js output
+    "outDir": "dist",              // Output directory
+    "rootDir": "src",              // Source directory
+    "esModuleInterop": true,       // For compatibility with CommonJS
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                // Enable all strict type-checking options
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.js"]
+}

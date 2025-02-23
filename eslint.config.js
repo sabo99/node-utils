@@ -5,10 +5,12 @@ const pluginJest = require("eslint-plugin-jest");
 /** @type {import('eslint').Linter.Config[]} */
 module.exports = [
 	pluginJs.configs.recommended,
-  pluginJest.configs["flat/recommended"],
+	pluginJest.configs["flat/recommended"],
+	{
+		ignores: ["dist/**", "node_modules/**", "coverage/**"] // Specify directories to ignore
+	},
 	{
 		plugins: { jest: pluginJest },
-		ignores: ["coverage/**"],
 		languageOptions: {
 			globals: {
 				...globals.node,
